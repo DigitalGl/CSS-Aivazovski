@@ -20,23 +20,36 @@
         <nav class="nav" aria-label="header navigation">
           <ul class="nav-list" aria-label="header navigation list">
             <li>
-              <a href="#home-id" class="nav-link" aria-labe="link to home">Home</a>
+              <a href="#home-id" class="nav-link" aria-label="link to home"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="#about-id" class="nav-link" aria-labe="link to about">About</a>
+              <a href="#about-id" class="nav-link" aria-label="link to about"
+                >About</a
+              >
             </li>
             <li>
-              <a href="#history-id" class="nav-link" aria-labe="link to history"
+              <a
+                href="#history-id"
+                class="nav-link"
+                aria-label="link to history"
                 >History</a
               >
             </li>
             <li>
-              <a href="#portfolio-id" class="nav-link" aria-labe="link to portfolio"
+              <a
+                href="#portfolio-id"
+                class="nav-link"
+                aria-label="link to portfolio"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a href="#" class="nav-link" aria-labe="link to contacts"
+              <a
+                href="#contacts-id"
+                class="nav-link"
+                aria-label="link to contacts"
                 >Contacts</a
               >
             </li>
@@ -44,6 +57,78 @@
         </nav>
       </div>
     </header>
+
+    <div class="mobile-navigation" aria-label="mobile-navigation">
+      <label for="toggler-id" aria-label="open-close mobile-navigation menu">
+        <svg class="mobile-navigation-burger" aria-label="burger icon">
+          <use href="assets/sprites.svg#burger-icon"></use>
+        </svg>
+      </label>
+
+      <input
+        type="checkbox"
+        id="toggler-id"
+        class="mobile-navigation-toggler"
+      />
+
+      <nav class="mobile-navigation-menu" aria-label="mob header navigation">
+        <ul
+          class="mobile-navigation-list"
+          aria-label="mob header navigation list"
+        >
+          <li>
+            <a
+              href="#home-id"
+              class="mobile-navigation-link"
+              aria-label="link to home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-id"
+              class="mobile-navigation-link"
+              aria-label="link to about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#history-id"
+              class="mobile-navigation-link"
+              aria-label="link to history"
+              >History</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio-id"
+              class="mobile-navigation-link"
+              aria-label="link to portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contacts-id"
+              class="mobile-navigation-link"
+              aria-label="link to contacts"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+
+        <label
+          for="toggler-id"
+          class="mobile-navigation-close"
+          aria-label="open-close mobile-navigation menu"
+        >
+          <svg class="mobile-navigation-cross" aria-label="cross icon">
+            <use href="assets/sprites.svg#cross-icon"></use>
+          </svg>
+        </label>
+      </nav>
+    </div>
 
     <main aria-label="main">
       <section class="home" aria-label="home section" id="home-id">
@@ -77,7 +162,7 @@
             величайших маринистов всех времён.
           </p>
 
-          <hr class="divider" aria-label="" />
+          <hr class="divider" aria-label="divider" />
 
           <h3 class="about-subtitle-en" aria-label="about subtitle en">
             Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian
@@ -98,7 +183,7 @@
           <h2 class="history-title">History</h2>
           <img
             src="assets/webp/history.webp"
-            alt="house of Aivazovski"
+            alt="house of Aivazovsky"
             class="history-photo"
           />
           <p class="history-description" aria-label="history description">
@@ -108,7 +193,11 @@
         </div>
       </section>
 
-      <section class="portfolio" aria-label="portfolio section" id="portfolio-id">
+      <section
+        class="portfolio"
+        aria-label="portfolio section"
+        id="portfolio-id"
+      >
         <div class="container">
           <h2 class="portfolio-title">Portfolio</h2>
           <img
@@ -121,7 +210,7 @@
           </p>
           <img
             src="assets/webp/portfolio_2.webp"
-            alt="Winter wagon train on the way"
+            alt="Rainbow"
             class="portfolio-picture"
           />
           <p class="portfolio-description" aria-label="picture 2 description">
@@ -129,16 +218,69 @@
           </p>
           <img
             src="assets/webp/portfolio_3.webp"
-            alt="Winter wagon train on the way"
+            alt="Gulf of Naples in the morning"
             class="portfolio-picture"
           />
           <p class="portfolio-description" aria-label="picture 3 description">
-            Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893
+            Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning,
+            1893
           </p>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
+      <div class="container">
+        <h2 class="contacts-title">Contacts</h2>
+        <button class="contacts-button">
+          <a href="https://ayvazovskiy.su" class="button-link" target="_blank"
+            >ayvazovskiy.su</a
+          >
+        </button>
+
+        <address class="socials" aria-label="social icons">
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            aria-label="link to youtube"
+          >
+            <svg class="social-icon" aria-label="youtube icon">
+              <use href="assets/sprites.svg#youtube-icon"></use>
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            aria-label="link to linkedin"
+          >
+            <svg class="social-icon" aria-label="linkedin icon">
+              <use href="assets/sprites.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="link to instagram"
+          >
+            <svg class="social-icon" aria-label="instagram icon">
+              <use href="assets/sprites.svg#instagram-icon"></use>
+            </svg>
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="link to facebook"
+          >
+            <svg class="social-icon" aria-label="facebook icon">
+              <use href="assets/sprites.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </address>
+
+        <p class="contacts-info" aria-label="just for notice">
+          More works you can see in these social networks
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
